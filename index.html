@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calc Windows 10</title>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="calc">
+                <label>
+                    <input id="saved-value" text="text" readonly>
+                </label>
+                <label>
+                    <input id="entered-value" type="text"
+                        oninput="this.value = this.value.replace(/(\..*?)\..*/g, '$1').replace(/[^0-9,.]/g, '');">
+                </label>
+                <div class="buttons">
+                    <ul>
+                        <li>
+                            <button class="btn-percentage" onclick="calculate('percentage')">%</button>
+                        </li>
+                        <li>
+                            <button class="btn-clearentry" onclick="calcClearEntry(0)">CE</button>
+                        </li>
+                        <li>
+                            <button class="btn-clear" onclick="calcClear(0)">C</button>
+                        </li>
+                        <li>
+                            <button class="btn-clear-one-digit" onclick="calcLastDigit()">←</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button class="btn-reciprocal" onclick="calculate('reciprocal')">1/x</button>
+                        </li>
+                        <li>
+                            <button class="btn-squared" onclick="calculate('squared')">x²</button>
+                        </li>
+                        <li>
+                            <button class="btn-squareroot" onclick="calculate('squareroot')">²√x</button>
+                        </li>
+                        <li>
+                            <button class="btn-division" onclick="calculate('division')">÷</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button class="btn-7" onclick="calcDigit(7)">7</button>
+                        </li>
+                        <li>
+                            <button class="btn-8" onclick="calcDigit(8)">8</button>
+                        </li>
+                        <li>
+                            <button class="btn-9" onclick="calcDigit(9)">9</button>
+                        </li>
+                        <li>
+                            <button class="btn-multiplication" onclick="calculate('multiplication')">×</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button class="btn-4" onclick="calcDigit(4)">4</button>
+                        </li>
+                        <li>
+                            <button class="btn-5" onclick="calcDigit(5)">5</button>
+                        </li>
+                        <li>
+                            <button class="btn-6" onclick="calcDigit(6)">6</button>
+                        </li>
+                        <li>
+                            <button class="btn-any-less" onclick="calculate('anyless')">-</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button class="btn-1" onclick="calcDigit(1)">1</button>
+                        </li>
+                        <li>
+                            <button class="btn-2" onclick="calcDigit(2)">2</button>
+                        </li>
+                        <li>
+                            <button class="btn-3" onclick="calcDigit(3)">3</button>
+                        </li>
+                        <li>
+                            <button class="btn-more" onclick="calculate('more')">+</button>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <button class="btn-invert">±</button>
+                        </li>
+                        <li>
+                            <button class="btn-0" onclick="calcDigit(0)">0</button>
+                        </li>
+                        <li>
+                            <button class="btn-comma">,</button>
+                        </li>
+                        <li>
+                            <button class="btn-equal" onclick="calculate('sum')">=</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./script.js"></script>
+
+</html>
