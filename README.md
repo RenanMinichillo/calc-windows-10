@@ -20,7 +20,7 @@ Este é um projeto de uma calculadora simples, semelhante à calculadora do Wind
 ## Screenshots
 
 <div align="center">
-<img src="https://github.com/RenanMinichillo/schedule/blob/main/PROJECT/Calc%20Windows/assets/calc.png?raw=true" alt="imagem calculadora - pc">
+<img src="https://github.com/RenanMinichillo/calc-windows-10/blob/main/assets/calc.png?raw=true" alt="imagem calculadora - pc">
 <br>
-<img src="https://github.com/RenanMinichillo/schedule/blob/main/PROJECT/Calc%20Windows/assets/calc1.png?raw=true" alt="imagem calculadora - celular">
+<img src="https://github.com/RenanMinichillo/calc-windows-10/blob/main/assets/calc1.png?raw=true" alt="imagem calculadora - celular">
 </div>
